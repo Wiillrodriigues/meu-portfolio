@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/will-rodrigues"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+  <a href="https://github.com/Wiillrodriigues"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
   <a href="https://wa.me/5511967613438?text=Ol%C3%A1%2C%20William!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar."><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"></a>
 </p>
 
@@ -39,7 +39,7 @@ O ecossistema do front-end deste portfólio foi construído utilizando ferrament
 ## ⚙️ Arquitetura e Funcionalidades Customizadas
 
 * **Menu Inteligente Dual-Mode:** Navbar adaptável com botão de destaque em telas grandes e colapso automático para Menu Hambúrguer integrado em resoluções móveis, otimizando o espaço de tela.
-* **Prevenção de Bugs de Visualização (Safe Render):** Tratamento de interceptações do DOM e bloqueio de strings de acessibilidade/tradução automática em navegadores mobile através de isolamento semântico no mapeamento de componentes.
+* **Prevenção de Bugs de Visualização (Safe Render):** Tratamento de interceptações do DOM e através de isolamento semântico no mapeamento de componentes, evitando falhas de estilização disparadas por tradutores de navegadores móveis.
 * **Performance Otimizada:** Carregamento assíncrono de componentes e assets estáticos para garantir carregamento instantâneo mesmo sob conexões móveis limitadas.
 
 ---
@@ -53,5 +53,5 @@ Certifique-se de ter instalado em sua máquina o **Node.js** (versão LTS recome
 
 ### 1. Clonar o Repositório
 ```bash
-git clone [https://github.com/will-rodrigues/SEU_REPOSITORIO.git](https://github.com/will-rodrigues/SEU_REPOSITORIO.git)
-cd SEU_REPOSITORIO
+git clone [https://github.com/Wiillrodriigues/meu-portfolio.git](https://github.com/Wiillrodriigues/meu-portfolio.git)
+cd meu-portfolio
