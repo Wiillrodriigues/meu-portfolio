@@ -4,7 +4,8 @@ import Loading from "../components/common/loading/Loading";
 const Home = lazy(() => import("../pages/Home"));
 const Main = lazy(() => import("../layouts/Main"));
 
-const repoName = import.meta.env.VITE_REPO_NAME || "";
+// Se a variável de ambiente estiver vazia, usamos o nome real do repositório como fallback seguro
+const repoName = import.meta.env.VITE_REPO_NAME || "meu-portfolio";
 
 export const router = createBrowserRouter(
   [
@@ -23,5 +24,5 @@ export const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: `/${repoName}` }
+  { basename: `/${repoName}` } // Agora isso vai virar "/meu-portfolio" com total segurança
 );
