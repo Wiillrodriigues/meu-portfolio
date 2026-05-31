@@ -23,15 +23,15 @@ const Footer = () => {
         </a>
         <div className="mx-7 max-md:my-7 text-center">
           {navItems.map((item) => (
-          <a
-    key={item.id}
-    className="mx-2 group inline-block relative w-fit text-[12px] sm:text-[16px]"
-    href={`#${item.url}`} // REMOVIDA A BARRA ANTES DA HASHTAG
-  >
-    {item.name}
-    <span className="absolute left-0 bottom-0 h-0.5 w-full bg-white scale-x-0 duration-300 group-hover:scale-x-100"></span>
-          </a>
-        ))}
+            <a
+              key={item.id}
+              className="mx-2 group inline-block relative w-fit text-[12px] sm:text-[16px]"
+              href={`#${item.url}`}
+            >
+              {item.name}
+              <span className="absolute left-0 bottom-0 h-0.5 w-full bg-white scale-x-0 duration-300 group-hover:scale-x-100"></span>
+            </a>
+          ))}
         </div>
         <p className="text-[12px] sm:text-[16px]">
           &copy; {copyrightYear} Will Rodrigues.
