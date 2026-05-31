@@ -1,13 +1,13 @@
 import logo from "../../../assets/logo.png";
+import { HashLink as Link } from "react-router-hash-link"; // Importação corretiva
 
-/* URLs mapeadas de forma idêntica aos IDs das suas <section> */
 const navItems = [
   { id: 1, name: "Início", url: "introduction" },
-  { id: 2, name: "Sobre", url: "sobre" },         // Alterado de 'profile' para 'sobre'
-  { id: 3, name: "Processo", url: "processo" },   // Alterado de 'work-process' para 'processo'
+  { id: 2, name: "Sobre", url: "sobre" },
+  { id: 3, name: "Processo", url: "processo" },
   { id: 4, name: "Portfólio", url: "portfolio" },
   { id: 5, name: "Artigos", url: "blog" },
-  { id: 6, name: "Serviços", url: "servicos" },   // Alterado de 'services' para 'servicos'
+  { id: 6, name: "Serviços", url: "servicos" },
   { id: 7, name: "Contato", url: "contact" },
 ];
 const copyrightYear = new Date().getFullYear();
@@ -16,22 +16,25 @@ const Footer = () => {
   return (
     <div className="pt-25 md:pt-40 content max-2xl:px-3">
       <div className="flex max-md:flex-col justify-between mx-0 items-center h-full w-full text-neutral-200">
-        <a href="#introduction" className="flex items-center border-0">
+        {/* Alterado para Link com scroll suave */}
+        <Link smooth to="#introduction" className="flex items-center border-0">
           <img src={logo} className="h-8 sm:h-14 rounded-2xl" alt="logo" />
           <p className="text-3xl sm:text-[32px] my-auto ms-[12px] font-semibold">
             Will Rodrigues
           </p>
-        </a>
+        </Link>
         <div className="mx-7 max-md:my-7 text-center">
           {navItems.map((item) => (
-            <a
+            /* Alterado para Link do hash-link com a propriedade 'smooth' */
+            <Link
+              smooth
               key={item.id}
               className="mx-2 group inline-block relative w-fit text-[12px] sm:text-[16px]"
-              href={`#${item.url}`}
+              to={`/#${item.url}`}
             >
               {item.name}
               <span className="absolute left-0 bottom-0 h-0.5 w-full bg-white scale-x-0 duration-300 group-hover:scale-x-100"></span>
-            </a>
+            </Link>
           ))}
         </div>
         <p className="text-[12px] sm:text-[16px]">

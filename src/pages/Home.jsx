@@ -13,29 +13,50 @@ import "../../index.css";
 const Home = () => {
   return (
     <div className="relative">
-      <div className="introduction-profile-background">
+      {/* ID do Início */}
+      <section id="introduction" className="introduction-profile-background">
         <div className="content">
           <Introduction />
-          <Profile />
+          {/* ID do Sobre inserido aqui para mapear o perfil */}
+          <div id="sobre">
+            <Profile />
+          </div>
         </div>
-      </div>
-      {/* <div className="bg-soft-white pt-30">
+      </section>
+
+      {/* ID do Processo (Removido o comentário caso queira usar, se não quiser, o ID já está pronto) */}
+      <section id="processo" className="bg-soft-white pt-30">
         <WorkProcess />
-      </div> */}
+      </section>
+
       <div className="bg-soft-white pt-40"></div>
-      <Portfolio />
+      
+      {/* ID do Portfólio */}
+      <section id="portfolio">
+        <Portfolio />
+      </section>
+
       <div className="bg-gray-900">
         <WorkTogether />
       </div>
-      <div className="blog-background">
+
+      {/* ID do Blog / Artigos */}
+      <section id="blog" className="blog-background">
         <Blog />
-      </div>
-      <div className="bg-soft-white">
+      </section>
+
+      {/* ID dos Serviços */}
+      <section id="servicos" className="bg-soft-white">
         <Profession />
-      </div>
+      </section>
+
       <HappyClients />
       <Testimonial />
-      <Contact />
+
+      {/* ID do Contato */}
+      <section id="contact">
+        <Contact />
+      </section>
     </div>
   );
 };
