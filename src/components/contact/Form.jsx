@@ -1,3 +1,5 @@
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+
 const telegramSVG = (
   <svg
     className="w-4 md:w-6 aspect-square"
@@ -22,47 +24,24 @@ const Form = () => {
         Estou sempre disponível para debater novas arquiteturas de sistemas, desafios de automação ou oportunidades profissionais.
       </p>
       <div className="mx-2">
-        <form className="flex flex-col gap-4 mt-4">
-          <input
-            type="text"
-            placeholder="Nome*"
-            className={`${commonClass}`}
-            required
-          />
-          <input
-            type="email"
-            placeholder="E-mail*"
-            className={`${commonClass}`}
-            required
-          />
-          <input
-            type="text"
-            placeholder="Localização / Cidade*"
-            className={`${commonClass}`}
-            required
-          />
+        <form 
+          action="https://formsubmit.co/wamaralr@gmail.com" 
+          method="POST"
+          className="flex flex-col gap-4 mt-4"
+        >
+          <input type="text" name="Nome" placeholder="Nome*" className={commonClass} required />
+          <input type="email" name="Email" placeholder="E-mail*" className={commonClass} required />
+          <input type="text" name="Localizacao" placeholder="Localização / Cidade*" className={commonClass} required />
 
           <div className="flex max-xs:flex-col max-xs:gap-4">
-            <input
-              type="text"
-              placeholder="Empresa / Organização*"
-              className={`${commonClass} xs:w-[50%] me-5`}
-              required
-            />
-            <input
-              type="text"
-              placeholder="Assunto*"
-              className={`${commonClass}`}
-              required
-            />
+            <input type="text" name="Empresa" placeholder="Empresa / Organização*" className={`${commonClass} xs:w-[50%] me-5`} required />
+            <input type="text" name="Assunto" placeholder="Assunto*" className={commonClass} required />
           </div>
 
-          <input
-            type="text"
-            placeholder="Mensagem*"
-            className={`${commonClass}`}
-            required
-          />
+          <textarea name="Mensagem" placeholder="Mensagem*" className={`${commonClass} h-24 resize-none pt-4`} required></textarea>
+
+          <input type="hidden" name="_captcha" value="false" />
+
           <button
             type="submit"
             className="btn gap-3 max-lg:mx-auto btn-primary rounded-sm mt-5 text-[13px] md:text-[16px] w-fit font-semibold lg:mt-12.5 p-2 md:px-4 text-white"

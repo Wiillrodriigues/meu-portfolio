@@ -1,4 +1,6 @@
-import Roles from "./Roles";
+import Roles from "./Roles";import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+
 
 // Mantivemos os 3 blocos originais, alterando os títulos e descrições para a sua stack técnica
 const rolesData = [
@@ -41,12 +43,16 @@ const Profession = () => {
           </p>
         </div>
         {/* Link corrigido de "#!" para "#contact" para funcionar como scroll real na Home */}
-        <a
-          href="#contact"
-          className="mt-5 md:mt-12.5 btn btn-primary text-white w-fit md:py-3 md:px-6 text-[12px] sm:text-[16px] font-semibold max-md:mx-auto max-md:mb-5"
-        >
-          Diga Olá!
-        </a>
+<div className="w-full flex justify-center mt-4">
+  <a
+    className="inline-flex items-center justify-center bg-[#8b5cf6] hover:bg-[#7c3aed] text-white font-medium text-sm px-5 py-2.5 rounded-md transition-colors duration-300 shadow-sm w-fit"
+    href="https://wa.me/5511967613438?text=Ol%C3%A1%2C%20William!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar."
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    Whatsapp
+  </a>
+</div>
       </div>
       <div className="">
         {rolesData.map((role, index) => (

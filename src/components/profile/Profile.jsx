@@ -46,19 +46,19 @@ const Profile = () => {
             </p>
           </div>
           <div className="mt-8 flex max-md:justify-center">
-            <a
+            {/* <a
               className="btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 btn-primary text-xs xxs:text-[14px] sm:text-[16px] text-white"
               href="#introduction" // Ou aponte para "#portfolio" se tiver uma seção de projetos
             >
               Meus Projetos
-            </a>
-            <a
-              className={`btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 hover:border-picto-primary bg-white duration-300 transition-all hover:text-picto-primary ms-4 text-xs xxs:text-[14px] sm:text-[16px] border border-gray-300`}
-              href="/curriculo.pdf" // Caminho onde você vai jogar o arquivo PDF do seu CV
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faDownload} className="mr-1.5" /> Baixar CV
+            </a> */}
+           <a
+  className={`btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 border border-picto-primary bg-picto-primary text-white duration-300 transition-all hover:bg-transparent hover:text-picto-primary ms-4 text-xs xxs:text-[14px] sm:text-[16px] rounded-md`}
+  href="/will.pdf" // Caminho onde você vai jogar o arquivo PDF do seu CV
+  target="_blank"
+  rel="noopener noreferrer"
+              >
+  <FontAwesomeIcon icon={faDownload} className="mr-1.5" /> Baixar CV
             </a>
           </div>
         </div>

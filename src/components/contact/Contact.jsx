@@ -7,7 +7,6 @@ import Address from "./Address";
 import Form from "./Form";
 import SocialMedia from "../common/socialMedia/SocialMedia";
 
-// Altere os valores abaixo com as suas informações reais se desejar exibir na tela
 const addressData = [
   {
     icon: faLocationDot,
@@ -17,12 +16,12 @@ const addressData = [
   {
     icon: faEnvelope,
     title: "Meu E-mail",
-    description: "will.rodrigues@exemplo.com", // Adicione seu e-mail de contato
+    description: "wamaralr@gmail.com",
   },
   {
     icon: faPhone,
     title: "Telefone",
-    description: "+55 (11) 99999-0000", // Adicione seu telefone celular
+    description: "+55 (11) 967613438",
   },
 ];
 
