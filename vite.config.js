@@ -2,12 +2,11 @@ import { defineConfig, loadEnv } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
-// https://vite.dev/config/
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
   
   return {
-    // Forçamos a string direto para o GitHub Pages nunca errar o caminho das assets
+    // Essa linha diz ao compilador para ajustar todos os caminhos do index.html para o GitHub Pages
     base: "/meu-portfolio/", 
     plugins: [react(), tailwindcss()],
     server: {
