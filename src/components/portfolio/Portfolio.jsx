@@ -87,7 +87,7 @@ const Portfolio = () => {
       </div>
       <div className="text-center">
         <a
-          href="https://github.com/seu-usuario" // Link direto para o seu perfil geral do GitHub
+          href="https://github.com/Wiillrodriigues" // Link direto para o seu perfil geral do GitHub
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-primary py-3 px-6 mt-12.5 text-center text-[16px] font-semibold text-white"
